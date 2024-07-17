@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import './App.css';
+import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       <div id="star-container"></div>
       <div>
         <Navbar />
+        <Hero />
       </div>
     </>
   );
