@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import './App.css';
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
@@ -22,14 +23,32 @@ function App() {
 
       starContainer.appendChild(star);
     }
+
+    // Handle window resize to reposition stars
+    const handleResize = () => {
+      const stars = document.querySelectorAll('.star');
+      stars.forEach(star => {
+        const posX = Math.random() * window.innerWidth;
+        const posY = Math.random() * window.innerHeight;
+        star.style.top = `${posY}px`;
+        star.style.left = `${posX}px`;
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   return (
     <>
       <div id="star-container"></div>
-      <div>
+      <div id="content-container" className="w-full h-full overflow-auto">
         <Navbar />
         <Hero />
+        <Footer />
       </div>
     </>
   );

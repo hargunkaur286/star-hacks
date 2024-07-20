@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = () => {
     return (
         <div>
-            <nav class="bg-blue-950 border-gray-200 dark:bg-gray-900 rounded-xl">
+            <nav class="bg-blue-950 border-gray-200 dark:bg-gray-900">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4  ">
                     <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                         <div className='text-3xl pl-2 pr-2 rounded-full'>💫</div>
