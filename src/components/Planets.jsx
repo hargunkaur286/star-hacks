@@ -1,4 +1,5 @@
 import React from 'react';
+
 import mercury from "../assets/mercury.png";
 import venus from "../assets/venus.png";
 import earth from "../assets/earth.png";
@@ -8,16 +9,25 @@ import saturn from "../assets/saturn.png";
 import uranus from "../assets/uranus.png";
 import neptune from "../assets/neptune.png";
 
+import mercuryFacts from "../pages/mercuryFacts.jsx"
+import venusFacts from "../pages/venusFacts.jsx"
+import earthFacts from "../pages/earthFacts.jsx"
+import marsFacts from "../pages/marsFacts.jsx"
+import jupiterFacts from "../pages/jupiterFacts.jsx"
+import saturnFacts from "../pages/saturnFacts.jsx"
+import uranusFacts from "../pages/uranusFacts.jsx"
+import neptuneFacts from "../pages/neptuneFacts.jsx"
+
 const Planets = () => {
   const planets = [
-    { src: mercury, name: 'Mercury' },
-    { src: venus, name: 'Venus' },
-    { src: earth, name: 'Earth' },
-    { src: mars, name: 'Mars' },
-    { src: jupiter, name: 'Jupiter' },
-    { src: saturn, name: 'Saturn' },
-    { src: uranus, name: 'Uranus' },
-    { src: neptune, name: 'Neptune' },
+    { src: mercury, name: 'Mercury', href: mercuryFacts },
+    { src: venus, name: 'Venus', href: venusFacts },
+    { src: earth, name: 'Earth', href: earthFacts },
+    { src: mars, name: 'Mars', href: marsFacts },
+    { src: jupiter, name: 'Jupiter', href: jupiterFacts },
+    { src: saturn, name: 'Saturn', href: saturnFacts },
+    { src: uranus, name: 'Uranus', href: uranusFacts },
+    { src: neptune, name: 'Neptune', href: neptuneFacts },
   ];
 
   return (

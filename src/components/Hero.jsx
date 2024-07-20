@@ -40,7 +40,7 @@ const Hero = () => {
         </span>
       </div>
       <div className="text-base md:text-xl lg:text-2xl text-center px-4 max-w-2xl mx-auto">
-        Explore the universe like never before. Discover celestial wonders, track space missions, and engage in virtual space adventures with StarMap.
+        Explore the universe like never before. Discover celestial wonders, track space missions, and engage in virtual space adventures with SpaceQuest.
       </div>
     </div>
   );
