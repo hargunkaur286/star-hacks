@@ -1,9 +1,19 @@
 import React, { useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Planets from "./components/Planets";
+
+import mercuryFacts from './pages/mercuryFacts'
+import venusFacts from './pages/venusFacts.jsx';
+import earthFacts from './pages/earthFacts.jsx';
+import marsFacts from './pages/marsFacts.jsx';
+import jupiterFacts from './pages/jupiterFacts.jsx';
+import saturnFacts from './pages/saturnFacts.jsx';
+import uranusFacts from './pages/uranusFacts.jsx';
+import neptuneFacts from './pages/neptuneFacts.jsx';
 
 function App() {
   useEffect(() => {
@@ -44,15 +54,29 @@ function App() {
   }, []);
 
   return (
-    <>
+    <Router>
       <div id="star-container"></div>
       <div id="content-container" className="w-full h-full overflow-auto">
         <Navbar />
-        <Hero />
-        <Planets />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero />
+              <Planets />
+            </>
+          } />
+          <Route path="/mercuryFacts" element={<mercuryFacts />} />
+          <Route path="/venusFacts" element={<venusFacts />} />
+          <Route path="/earthFacts" element={<earthFacts />} />
+          <Route path="/marsFacts" element={<marsFacts />} />
+          <Route path="/jupiterFacts" element={<jupiterFacts />} />
+          <Route path="/saturnFacts" element={<saturnFacts />} />
+          <Route path="/uranusFacts" element={<uranusFacts />} />
+          <Route path="/neptuneFacts" element={<neptuneFacts />} />
+        </Routes>
         <Footer />
       </div>
-    </>
+    </Router>
   );
 }
 
