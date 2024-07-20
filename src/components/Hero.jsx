@@ -35,11 +35,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <div id="hero-section" className="relative w-full h-screen flex justify-center items-center text-white flex-col">
+    <div id="hero-section" className="relative w-full min-h-screen flex justify-center items-center text-white flex-col">
       <div className="text-4xl md:text-6xl lg:text-7xl z-10 text-center font-bold mb-4">
         <span className="inline-block animate-typewriter overflow-hidden whitespace-nowrap border-r-4 border-white pr-5">
-          <div>Your Gateway to </div>
-          <div>the Cosmos!</div>
+          Your Gateway to the Cosmos!
         </span>
       </div>
       <div className="text-xl md:text-2xl lg:text-3xl text-center px-4 max-w-2xl mx-auto">
@@ -50,4 +49,3 @@ const Hero = () => {
 }
 
 export default Hero;
-

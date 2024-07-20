@@ -3,6 +3,7 @@ import './App.css';
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Planets from "./components/Planets";
 
 function App() {
   useEffect(() => {
@@ -48,6 +49,7 @@ function App() {
       <div id="content-container" className="w-full h-full overflow-auto">
         <Navbar />
         <Hero />
+        <Planets />
         <Footer />
       </div>
     </>
