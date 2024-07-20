@@ -5,6 +5,7 @@ import heroImg3 from "../assets/heroImg3.png";
 import heroImg4 from "../assets/heroImg4.png";
 import heroImg5 from "../assets/heroImg5.png";
 import heroImg6 from "../assets/heroImg6.png";
+import "../App.css"
 
 const Hero = () => {
   const ufoImages = [
@@ -21,12 +22,9 @@ const Hero = () => {
 
     ufoImages.forEach((image) => {
       const ufo = document.createElement('img');
-      const size = 150;
 
       ufo.src = image.src;
-      ufo.classList.add('absolute', 'animate-float');
-      ufo.style.width = `${size}px`;
-      ufo.style.height = 'auto';
+      ufo.classList.add('absolute', 'animate-float', 'responsive-img');
       ufo.style.top = image.top;
       ufo.style.left = image.left;
 
@@ -35,13 +33,13 @@ const Hero = () => {
   }, []);
 
   return (
-    <div id="hero-section" className="relative w-full min-h-screen flex justify-center items-center text-white flex-col">
-      <div className="text-4xl md:text-6xl lg:text-7xl z-10 text-center font-bold mb-4">
+    <div id="hero-section" className="relative w-full min-h-screen flex justify-center items-center text-white flex-col overflow-hidden">
+      <div className="text-2xl md:text-4xl lg:text-6xl z-10 text-center font-bold mb-4 px-4">
         <span className="inline-block animate-typewriter overflow-hidden whitespace-nowrap border-r-4 border-white pr-5">
           Your Gateway to the Cosmos!
         </span>
       </div>
-      <div className="text-xl md:text-2xl lg:text-3xl text-center px-4 max-w-2xl mx-auto">
+      <div className="text-base md:text-xl lg:text-2xl text-center px-4 max-w-2xl mx-auto">
         Explore the universe like never before. Discover celestial wonders, track space missions, and engage in virtual space adventures with StarMap.
       </div>
     </div>

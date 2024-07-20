@@ -46,3 +46,33 @@ body {
   min-height: 100vh; /* Ensures the footer stays at the bottom */
   justify-content: space-between;
 }
+
+
+.responsive-img {
+  width: 50px;  /* Default size for very small screens */
+  height: auto;
+}
+
+@media (min-width: 640px) {
+  .responsive-img {
+    width: 75px;  /* Adjusted size for small screens (sm) */
+  }
+}
+
+@media (min-width: 768px) {
+  .responsive-img {
+    width: 100px;  /* Adjusted size for medium screens (md) */
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-img {
+    width: 125px;  /* Adjusted size for large screens (lg) */
+  }
+}
+
+@media (min-width: 1280px) {
+  .responsive-img {
+    width: 150px;  /* Adjusted size for extra-large screens (xl) */
+  }
+}

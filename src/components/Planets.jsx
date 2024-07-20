@@ -28,7 +28,7 @@ const Planets = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 z-10">
         {planets.map((planet, index) => (
           <div key={index} className="text-center relative">
-            <img src={planet.src} alt={planet.name} className="mx-auto mb-2 w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 animate-float" />
+            <img src={planet.src} alt={planet.name} className="mx-auto mb-2 w-32 h-24 md:w-40 md:h-32 lg:w-50 lg:h-40 animate-float" />
             <div className="text-lg font-medium">{planet.name}</div>
           </div>
         ))}
