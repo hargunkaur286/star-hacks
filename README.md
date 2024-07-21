@@ -2,6 +2,8 @@
 
 1. Clone the repository
 2. Run the following commands
+
+
      a. npm i
      b. npm run dev 
 
