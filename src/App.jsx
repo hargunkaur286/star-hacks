@@ -21,6 +21,7 @@ import ImagesData from "./components/imagesData";
 import Images from "./pages/Images";
 import SpaceQuiz from "./pages/SpaceQuiz";
 import GuessThePlanet from "./pages/GuessThePlanet";
+import PlanetaryDefender from "./pages/PlanetaryDefender";
 
 
 function App() {
@@ -89,6 +90,7 @@ function App() {
           <Route path="/images" element={<Images />} />
           <Route path="/quiz" element={<SpaceQuiz />} />
           <Route path="/guess-planet" element={<GuessThePlanet />} />
+          <Route path="/planetary-defender" element={<PlanetaryDefender />} />
         </Routes>
 
         <Footer />
