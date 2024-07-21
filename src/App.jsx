@@ -22,6 +22,9 @@ import Images from "./pages/Images";
 import SpaceQuiz from "./pages/SpaceQuiz";
 import GuessThePlanet from "./pages/GuessThePlanet";
 import PlanetaryDefender from "./pages/PlanetaryDefender";
+import SpaceExplorer from "./pages/SpaceExplorer";
+import GalacticTrader from "./pages/SpaceTrader";
+import SpaceTrader from "./pages/SpaceTrader";
 
 
 function App() {
@@ -75,7 +78,7 @@ function App() {
               <PictureDay />
               <WeatherData />
               <ImagesData />
-             </>
+            </>
           } />
           <Route path="/mercuryFacts" element={<MercuryFacts />} />
           <Route path="/venusFacts" element={<VenusFacts />} />
@@ -91,6 +94,8 @@ function App() {
           <Route path="/quiz" element={<SpaceQuiz />} />
           <Route path="/guess-planet" element={<GuessThePlanet />} />
           <Route path="/planetary-defender" element={<PlanetaryDefender />} />
+          <Route path="/space-explorer" element={<SpaceExplorer />} />
+          <Route path="/space-trader" element={<SpaceTrader />} />
         </Routes>
 
         <Footer />
