@@ -13,6 +13,8 @@ import JupiterFacts from "./pages/JupiterFacts";
 import SaturnFacts from "./pages/SaturnFacts";
 import UranusFacts from "./pages/UranusFacts";
 import NeptuneFacts from "./pages/NeptuneFacts";
+import Picture from "./pages/Picture";
+import PictureDay from "./components/PictureDay";
 
 
 function App() {
@@ -63,6 +65,7 @@ function App() {
             <>
               <Hero />
               <Planets />
+              <PictureDay />
             </>
           } />
           <Route path="/mercuryFacts" element={<MercuryFacts />} />
@@ -73,6 +76,7 @@ function App() {
           <Route path="/saturnFacts" element={<SaturnFacts />} />
           <Route path="/uranusFacts" element={<UranusFacts />} />
           <Route path="/neptuneFacts" element={<NeptuneFacts />} />
+          <Route path="/picture" element={<Picture />} />
         </Routes>
 
         <Footer />
