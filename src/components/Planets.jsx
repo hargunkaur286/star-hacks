@@ -23,10 +23,11 @@ const Planets = () => {
   ];
 
   return (
-    <div className="text-white p-8">
-      <div className='text-4xl md:text-6xl lg:text-7xl z-10 text-center font-bold mb-8'>
-        Know Your Planets!
+    <div className="text-white p-8 flex-col ">
+      <div className='flex items-center justify-center'>
+      <h1 className="text-4xl font-bold mb-8">Know Your Planets</h1>
       </div>
+      
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 z-10">
         {planets.map((planet, index) => (
           <div key={index} className="text-center relative">

@@ -25,6 +25,7 @@ import PlanetaryDefender from "./pages/PlanetaryDefender";
 import SpaceExplorer from "./pages/SpaceExplorer";
 import GalacticTrader from "./pages/SpaceTrader";
 import SpaceTrader from "./pages/SpaceTrader";
+import Games from "./components/Games";
 
 
 function App() {
@@ -78,6 +79,7 @@ function App() {
               <PictureDay />
               <WeatherData />
               <ImagesData />
+              <Games />
             </>
           } />
           <Route path="/mercuryFacts" element={<MercuryFacts />} />

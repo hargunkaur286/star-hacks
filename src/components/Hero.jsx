@@ -36,11 +36,13 @@ const Hero = () => {
     <div id="hero-section" className="relative w-full min-h-screen flex justify-center items-center text-white flex-col overflow-hidden">
       <div className="text-2xl md:text-4xl lg:text-6xl z-10 text-center font-bold mb-4 px-4">
         <span className="inline-block animate-typewriter overflow-hidden whitespace-nowrap border-r-4 border-white pr-5">
-          Your Gateway to the Cosmos!
+          Your Gateway to the 
+          <br />Cosmos!
         </span>
       </div>
       <div className="text-base md:text-xl lg:text-2xl text-center px-4 max-w-2xl mx-auto">
-        Explore the universe like never before. Discover celestial wonders, track space missions, and engage in virtual space adventures with SpaceQuest.
+        Explore the universe like never before. 
+        <br />Discover celestial wonders, track space missions, and engage in virtual space adventures with SpaceQuest.
       </div>
     </div>
   );

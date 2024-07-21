@@ -31,8 +31,8 @@ const PictureDay = () => {
 
   return (
     <div className="flex flex-col items-center justify-center p-4">
-      <div className="text-4xl md:text-6xl lg:text-7xl z-10 text-center font-bold mb-8">
-        Picture of the Day
+      <div className='flex items-center justify-center'>
+      <h1 className="text-4xl font-bold mb-8">Picture of the Day</h1>
       </div>
       <div className="flex bg-gray-800 rounded-lg shadow-lg overflow-hidden w-full max-w-7xl">
         {pictureData && (
