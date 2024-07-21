@@ -15,6 +15,10 @@ import UranusFacts from "./pages/UranusFacts";
 import NeptuneFacts from "./pages/NeptuneFacts";
 import Picture from "./pages/Picture";
 import PictureDay from "./components/PictureDay";
+import Weather from "./pages/Weather";
+import WeatherData from "./components/WeatherData";
+import ImagesData from "./components/imagesData";
+import Images from "./pages/Images";
 
 
 function App() {
@@ -58,7 +62,7 @@ function App() {
   return (
     <Router>
       <div id="star-container"></div>
-      <div id="content-container" className="w-full h-full overflow-auto">
+      <div id="content-container" className="w-full overflow-auto">
         <Navbar />
         <Routes>
           <Route path="/" element={
@@ -66,7 +70,9 @@ function App() {
               <Hero />
               <Planets />
               <PictureDay />
-            </>
+              <WeatherData />
+              <ImagesData />
+             </>
           } />
           <Route path="/mercuryFacts" element={<MercuryFacts />} />
           <Route path="/venusFacts" element={<VenusFacts />} />
@@ -77,6 +83,8 @@ function App() {
           <Route path="/uranusFacts" element={<UranusFacts />} />
           <Route path="/neptuneFacts" element={<NeptuneFacts />} />
           <Route path="/picture" element={<Picture />} />
+          <Route path="/weather" element={<Weather />} />
+          <Route path="/images" element={<Images />} />
         </Routes>
 
         <Footer />
