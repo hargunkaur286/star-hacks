@@ -23,7 +23,6 @@ import SpaceQuiz from "./pages/SpaceQuiz";
 import GuessThePlanet from "./pages/GuessThePlanet";
 import PlanetaryDefender from "./pages/PlanetaryDefender";
 import SpaceExplorer from "./pages/SpaceExplorer";
-import GalacticTrader from "./pages/SpaceTrader";
 import SpaceTrader from "./pages/SpaceTrader";
 import Games from "./components/Games";
 
